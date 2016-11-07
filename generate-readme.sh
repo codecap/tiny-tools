@@ -9,7 +9,7 @@ readme_file="README.md"
 echo -n > $readme_file
 exec > $readme_file
 ##############################################################################
-for d in $(find . -mindepth 1 -type d | grep -v "[.]/[.]git")
+for d in $(find . -mindepth 1 -type d | grep -v "[.]/[.]git" | sort)
 do
   echo "## $(basename $d)"
 
