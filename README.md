@@ -26,3 +26,27 @@ EXAMPLE:
     -e jar \
     -v 2.4 \
 ```
+## node.js
+### npm-pull.sh
+```
+DOCUMENTATION:
+  npm-pull.sh is a bash script to pull artifacts from a npm repository
+  using curl only.
+
+DEPENDENCIES:
+  - curl
+
+USAGE:
+  npm-pull.sh
+     -r --repo-url      npm repo URL
+     -d --destination   destination directory
+     -p --pkg-name      package name
+     -v --version       version
+
+EXAMPLE:
+  npm-pull.sh \
+    -r http://[HOST]:[PORT]/repository/npm-all \
+    -d target/ \
+    -p npmlog \
+    -v 4.0.0 \
+```
