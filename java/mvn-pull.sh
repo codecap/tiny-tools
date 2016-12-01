@@ -161,7 +161,7 @@ if download
 then
   targetPath=$(readlink -m "${destination}/${artifactBaseName}")
   echo "  -> ${targetPath}"
-  mv "${tmpDir}/${pkgBaseName}" "${targetPath}"
+  mv "${tmpDir}/${artifactBaseName}" "${targetPath}"
 else
   fail
 fi
